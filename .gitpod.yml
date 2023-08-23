@@ -1,0 +1,16 @@
+---
+image:
+    file: .gitpod.Dockerfile
+
+tasks:
+    - init: pip3 install --upgrade conan && pre-commit install -f --hook-type pre-commit
+
+vscode:
+    extensions:
+        - ms-vscode.cmake-tools
+        - github.vscode-pull-request-github
+        - webfreak.debug
+        - mhutchie.git-graph
+        - matepek.vscode-catch2-test-adapter
+        - xaver.clang-format
+        - streetsidesoftware.code-spell-checker
